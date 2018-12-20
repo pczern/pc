@@ -7,9 +7,7 @@ import css from './index.scss'
 import Review from './Review'
 import BoxedContainer from '../../../../app/components/Container/BoxedContainer'
 
-type Props = {
-  size: any
-}
+type Props = {}
 const Reviews: StatelessComponent<Props> = props => {
   const settings = {
     dots: true,

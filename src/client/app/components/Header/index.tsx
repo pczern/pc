@@ -61,6 +61,9 @@ class Header extends React.Component<Props, State> {
             >
               Home
             </NavLink>
+            {/* <NavLink activeClassName={css['header__link--active']} to="/about">
+              Über
+            </NavLink> */}
             <NavLink
               activeClassName={css['header__link--active']}
               to="/projekte"
@@ -68,20 +71,20 @@ class Header extends React.Component<Props, State> {
               Projekte
             </NavLink>
             <NavLink activeClassName={css['header__link--active']} to="/blog">
-              Blog
+              Blog / Posts
             </NavLink>
-            <NavLink
+            {/* <NavLink
               activeClassName={css['header__link--active']}
               to="/kontakt"
             >
-              Kontakt
-            </NavLink>
+              Get In Touch
+            </NavLink> */}
             <NavLink
               activeClassName={css['header__link--active']}
               className={css.header__linkHighlighted}
               to="/kontakt"
             >
-              Beauftrage Mich
+              Kontaktiere Mich
             </NavLink>
           </ul>
         </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import { createBrowserHistory, createMemoryHistory } from 'history'
 import { hydrate } from 'react-dom'
-import {ConnectedRouter} from 'connected-react-router'
+import { ConnectedRouter } from 'connected-react-router'
 import App from './app'
 import { hideAllModals } from '../shared/actions/modals'
 import { init } from '../shared/actions/init'
@@ -28,7 +28,7 @@ if (!isServer) {
 
 if (process.env.NODE_ENV === 'development')
   if ((module as any).hot) {
-     (module as any).hot.accept('./app', () => {
+    ;(module as any).hot.accept('./app', () => {
       store.dispatch(init())
     })
   }
@@ -65,13 +65,14 @@ const Index = (
 const root = document.getElementById('root')
 hydrate(Index, root)
 
-if (process.env.NODE_ENV === 'development') {
-  if (module['hot']) {
-    module['hot'].accept(null, () => {
-      store.dispatch(init())
-    })
-  }
+if (module['hot']) {
+  module['hot'].accept()
+  // module['hot'].accept(null, () => {
+  //   store.dispatch(init())
+  // })
+}
 
+if (process.env.NODE_ENV === 'development') {
   if (!window['store'] || !window['browserHistory']) {
     window['browserHistory'] = history
     window['store'] = store

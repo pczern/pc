@@ -1,0 +1,21 @@
+.article {
+  text-align: left;
+  background-color: #17A2CA;
+  background: #457fca;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(135deg, #5691c8, #35629c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #6a3093;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, $colorPrimary, #17A2CA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 3px;
+  height: 300px;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  h1,h2 {
+    font-weight: normal;
+    color: #FFF;
+
+  }
+}

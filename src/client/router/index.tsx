@@ -1,6 +1,6 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Home from '../pages/Home'
+import About from '../pages/About'
 import Modals from '../app/modals'
 import Blog from '../pages/Blog'
 import BlogPage from '../pages/BlogPage'
@@ -23,7 +23,8 @@ class PageRouter extends React.Component {
           <Route path="/kontakt" component={Contact} />
           <Route path="/impressum" component={Impressum} />
           <Route path="/datenschutz" component={Datenschutz} />
-          <Route path="/" component={Home} exact={true} />
+          <Route path="/bio" component={About} />
+          <Route path="/" component={About} exact={true} />
           <Route component={FourOFour} />
         </Switch>
         <Modals />
