@@ -18,4 +18,3 @@ See it in Action: **https://philippczernitzki.me**
 - responsive web design
 - provides sitemap.txt
 - blog articles published over Prismic
-- uses SSL
