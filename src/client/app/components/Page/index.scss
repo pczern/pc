@@ -1,0 +1,53 @@
+.page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: $dimenMobileHeaderHeight;
+  &__noMarginTop {
+    margin-top: 0;
+  }
+  &__noCenter {
+    text-align: left;
+  }
+}
+
+.content {
+  // min-height: 100%;
+  // min-height: 100%;
+  // position: relative;
+
+  // height: 100%;
+  position: relative;
+  flex: 1;
+}
+@include tablet {
+  .contentInner {
+    min-height: 80vh;
+  }
+}
+
+.loader {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+.loadDiv {
+  background-color: $colorPrimary !important;
+}
+@include tablet {
+  .page {
+    margin-top: $dimenHeaderHeight;
+    &__noMarginTop {
+      margin-top: 0;
+    }
+  }
+}

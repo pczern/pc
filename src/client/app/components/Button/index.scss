@@ -1,0 +1,36 @@
+.button {
+  font-size: 1em;
+  font-weight: 300;
+  &:focus {
+    outline: 0;
+  }
+  &__primary {
+    padding: 0 2.5em;
+    line-height: 2.5;
+    font-weight: 500;
+    border: 0;
+    background-color: $colorPrimary;
+    color: #fff;
+  }
+  // &__default {
+  //   background-color: colors(buttons, default, background);
+  //   color: colors(buttons, default, color);
+  // }
+  // &__custom {
+  //   background-color: colors(buttons, custom, background);
+  //   color: colors(buttons, custom, color);
+  // }
+
+  &__ghostLight {
+    padding: 0 2.5em;
+    line-height: 2.5;
+    font-weight: 500;
+    background-color: transparent;
+    border: colors(buttons, ghostLight, color) solid 2px;
+    color: colors(buttons, ghostLight, color);
+  }
+
+  &__simpleLight {
+    color: $colorLight;
+  }
+}

@@ -1,0 +1,63 @@
+.data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.8em;
+  text-align: center;
+
+  div {
+    padding-right: 25px;
+    padding-left: 25px;
+    &:first-of-type {
+      padding-left: 0;
+      border-right: solid 1px #aaa;
+    }
+  }
+
+  div:last-of-type {
+    border-left: solid 1px #aaa;
+  }
+  span:first-child {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    display: block;
+  }
+  span:last-child {
+    color: #aaa;
+    font-size: 0.9em;
+  }
+}
+
+.text {
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+@include phone-only {
+  .container__inner {
+    padding-top: 0;
+  }
+}
+
+@include tablet-only {
+  .container__inner {
+    padding-top: 0;
+  }
+}
+.container {
+  text-align: center;
+}
+
+@include desktop {
+  .container {
+    text-align: center;
+    background-color: #fbfbfb;
+  }
+  .text {
+    margin-bottom: 0;
+  }
+  .data {
+    margin-top: 56px;
+  }
+}

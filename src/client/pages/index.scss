@@ -1,0 +1,5 @@
+@import '../app/css/dimens';
+
+.page {
+  margin-top: dimens(header, height);
+}

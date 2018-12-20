@@ -1,0 +1,56 @@
+.review {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
+.review__text {
+  margin-bottom: 1em;
+  font-weight: 300;
+  hyphens: auto;
+  text-align: justify;
+}
+.review__infos {
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    display: block;
+    color: $colorPrimary;
+    line-height: 1.5;
+  }
+}
+.review__stars {
+  color: $colorPrimary;
+  padding-left: 0.5em;
+  font-size: 0.95em;
+}
+
+@include tablet {
+  .review {
+    margin: 0 auto;
+    margin-bottom: 48px;
+    text-align: left;
+    max-width: 450px;
+  }
+  .review__stars {
+    color: $colorPrimary;
+    padding-left: 0;
+  }
+}
+@include desktop {
+  .reviews {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    @include row();
+  }
+  .review {
+    @include col;
+    @include span_4_of_12;
+
+    margin-bottom: 0;
+  }
+}

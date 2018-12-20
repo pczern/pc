@@ -1,0 +1,169 @@
+[
+  {
+    "id": 1,
+    "title": "BeUpTo",
+    "subtitle": null,
+    "description": "Eine Abonnement App, abonniere Podcasts, Youtube Kanäle, Blogs etc. alles von einer App aus. Verliere nicht den Überblick durch faszinierend eingesetztes Material Design. Melde Dich an mit allen Social Media Profilen und sehe alle Updates auf einen Blick.",
+    "image": "https://via.placeholder.com/200x150",
+    "technologies": ["Firebase", "Material Design", "Android SDK"],
+    "date": "05.04.2017",
+    "repo": "https://github.com/pczern/beupto"
+  },
+  {
+    "id": 2,
+    "title": "Venos",
+    "subtitle": "Intelligent Geteilter Cloud Speicher",
+    "description": "Erstelle Hubs, speichere Dateien und teile das Ergebnis mit Deinen Freunden. Für schnellsten Zugriff erstelle einen 4-stelligen PIN, um dein Projekt in Sekunden schnelle zu teilen",
+    "image": "https://via.placeholder.com/200x150",
+    "technologies": [
+      "React.js",
+      "Webpack",
+      "Google Cloud Storage API",
+      "Firebase",
+      "ExpressJS",
+      "Node.js"
+    ],
+    "date": "22.2.0",
+    "repo": "https://github.com/JasonProcka/venos"
+  },
+  {
+    "id": 3,
+    "title": "philippczernitzki.me",
+    "subtitle": null,
+    "description": "Diese Tree Komponente macht es einfach eine Baumstruktur im Web darzustellen. Klappe einfach einen Knoten auf und siehe alle untergeordneten Knoten.",
+    "image": "https://via.placeholder.com/200x150",
+    "technologies": ["GatsbyJS", "React.js"],
+    "date": "24.01.2018",
+    "demo": "https://angry-shaw-cd336c.netlify.com/",
+    "repo": "https://github.com/pczern/philippczernitzki.me"
+  },
+
+  {
+    "id": 4,
+    "title": "responsive-sidebar",
+    "subtitle": null,
+    "description": "Für ein privates Projekt brauchte unser Team, eine animierte Sidebar (z.B. für Mobilgeräte). Deshalb erstellte ich eine zuverlässige Sidebar die auf jedem Gerät funktioniert, einschließlich Internet Explorer 8. Die Komponente erlaubt es, die Breite sowie die Art der Animation einzustellen.",
+    "image": "https://via.placeholder.com/200x150",
+    "technologies": ["JavaScript ES5", "Closures", "Kein jQuery"],
+    "date": "17.05.2015",
+    "demo": "http://pczern.github.io/responsive-sidebar/demo/",
+    "repo": "https://github.com/pczern/responsive-sidebar"
+  },
+  {
+    "id": 5,
+    "title": "react-drag-n-zoom",
+    "subtitle": null,
+    "description": "react-drag-n-zoom is eine Komponente, welche es Dir ermöglicht SVGs zu zentrieren, zu zoomen, im Vollbild anzuzeigen. Schau Dir Deine SVGs aus jedem Blickwinkel an! Da Firefox und Webkit basierte Browser wie Chrome SVGs unterschiedlich implementieren, werden die richtigen Koordinaten jeweils unterschiedlich berechnet, für das beste Ergebnis in allen Browsern.",
+    "image": "https://via.placeholder.com/200x150",
+    "technologies": ["React.js", "TypeScript", "Webpack", "Babel", "ES6"],
+    "date": "01.09.2018",
+    "demo": "https://pczern.github.io/react-drag-n-zoom/demo/",
+    "repo": "https://github.com/pczern/react-drag-n-zoom"
+  },
+  {
+    "id": 6,
+    "title": "react-collapsible-tree",
+    "subtitle": null,
+    "description": "Diese Tree Komponente macht es einfach eine Baumstruktur im Web darzustellen. Klappe einfach einen Knoten auf und siehe alle untergeordneten Knoten.",
+    "image": "https://via.placeholder.com/200x150",
+    "technologies": ["React.js", "ES6", "Webpack", "Babel", "Redux"],
+    "date": "24.01.2018",
+    "demo": "https://pczern.github.io/react-collapsible-tree/demo/",
+    "repo": "https://github.com/pczern/react-collapsible-tree"
+  },
+  {
+    "id": 7,
+    "title": "Aktuelle Webseite",
+    "subtitle": null,
+    "description": "Die aktuelle Webseite, auf der Du Dich gerade befindest, wurde erstellt, um zu zeigen was ich mache.",
+    "image": null,
+    "technologies": ["React.js", "Webpack", "Babel", "Redux", "SASS"],
+    "date": "01.09.2018",
+    "demo": "https://philippczernitzki.me/",
+    "repo": "https://github.com/pczern/speeddeveloper.me"
+  },
+  {
+    "id": 8,
+    "title": "#1 Personal Webseite",
+    "subtitle": null,
+    "description": "Mit 15/16 Jahren startete ich diesen Prototypen, um zu zeigen mit welchen Technologien ich arbeite. Ich wollte zeigen wer ich bin und was ich mache. CSS3 Animationen und ein jQuery Typewriter hebten, dass Design an. Nach vielen Überlegungen ging die Reise auch schnell weiter und es kam einige Jahre später Version 2, mit neuen Tools wie GatsbyJS",
+    "image": "/static/assets/projects/philippczernitzki.png",
+    "technologies": [
+      "jQuery",
+      "Responsive Webdesign",
+      "HTML5",
+      "CSS3",
+      "Meyerweb Reset CSS"
+    ],
+    "date": "04.04.2016",
+    "demo": "http://pczern.github.io/speeddeveloper.me/",
+    "repo": "https://github.com/pczern/speeddeveloper.me"
+  },
+  {
+    "id": 9,
+    "title": "php-shop-demo",
+    "subtitle": null,
+    "description": "Ein einfacher PHP Shop, welcher es Dir schnell ermöglicht einen Online Shop aufzubauen. Natürlich ist es nur eine Demo weil es nur ein Starter für dein nächstes Projekt ist.",
+    "image": "/static/assets/projects/shop.png",
+    "technologies": ["PHP", "CSS3", "HTML5"],
+    "date": "17.06.2018",
+    "repo": "https://github.com/pczern/php-shop-demo"
+  },
+  {
+    "id": 10,
+    "title": "react-starter-boilerplate",
+    "subtitle": null,
+    "description": "Boilerplate um schnell React.js Projekte zu erstellen mit vorkonfigurierter Webpack Config. Diese enthält TypeScript Loader, Sass Loader, Dev Server etc.",
+    "image": "https://via.placeholder.com/200x150",
+    "technologies": ["React.js", "ES6", "Webpack", "Babel"],
+    "date": "01.07.2018",
+    "repo": "https://github.com/pczern/react-starter-boilerplate"
+  },
+  {
+    "id": 11,
+    "title": "Team Sport",
+    "subtitle": null,
+    "description": "Eine Web App mit der sich Sportler schnell finden können. Schaue einfach auf die große Google Maps Karte und sehe alle Sportler in deiner Nähe.\nProgrammiert für @JugendHackt, Gewinn 'Bestes Design'",
+    "image": "https://via.placeholder.com/200x150",
+    "technologies": [
+      "Angular",
+      "Node.js",
+      "Mongo DB",
+      "Google Maps",
+      "Material Design"
+    ],
+    "date": "17.06.2018",
+    "repo": "https://github.com/pczern/Team-Sport"
+  },
+  {
+    "id": 12,
+    "title": "popular-movies",
+    "subtitle": null,
+    "description": "Eine Android App, welche alle aktuellen Filme anzeigt über die The Movie Database (TMDb). Erstellt als Teil der Android Developer Certification.",
+    "image": "https://via.placeholder.com/200x150",
+    "technologies": ["Android", "TMDb API"],
+    "date": "29.01.2017",
+    "repo": "https://github.com/pczern/popular-movies"
+  },
+
+  {
+    "id": 13,
+    "title": "Fiverr",
+    "subtitle": null,
+    "description": "Auf Fiverr starte ich meine ersten online Kundenprojekte. Schnell baute ich eine Java Applikation, die Daten von verschiedenen Unis fetchte. Ich passte ein WordPress Plugin an. Und passte eine Webseite an.",
+    "image": "/static/assets/projects/fiverr.png",
+    "technologies": ["MySQL", "WordPress", "CSS3"],
+    "date": "05.06.2016",
+    "link": "https://www.fiverr.com/users/speeddeveloper/manage_orders/FO577EF4A2E6"
+  },
+  {
+    "id": 14,
+    "title": "Montreus Chat",
+    "subtitle": null,
+    "description": "Als ich 15 Jahre alt war, startete ich mir ein Netzwerk aufzubauen. Dabei lernte ich viele verschiedene Software Engineere kennen. Zusammen mit einem Entwickler kreierte ich Montreus-Chat, ein Chat, welcher auf mobil und desktop Geräten gleichermaßen läuft. Aufgebaut wurde das ganze mit der Socket.io Lib. Der Code ist einfach und schnell gelesen, man kann sich sicher sein, dass nichts aufgezeichnet wird",
+    "image": "https://via.placeholder.com/200x150",
+    "technologies": ["Node.js", "Socket.io", "jQuery"],
+    "date": "30.01.2015",
+    "repo": "https://github.com/pczern/montreus-chat"
+  }
+]

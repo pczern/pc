@@ -1,0 +1,83 @@
+.column {
+  h2 {
+    font-size: 1.1em;
+    line-height: 2em;
+    margin-bottom: 0.4em;
+  }
+  svg {
+    color: $colorPrimary;
+    font-size: 3em;
+    margin-bottom: 0.4em;
+  }
+  svg * {
+    fill: url(#rg);
+  }
+  p {
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 48px;
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  margin-bottom: 32px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+@include phone-only {
+  .container__inner {
+    padding-top: 0;
+  }
+}
+@include tablet-only {
+  .container__inner {
+    padding-top: 0;
+  }
+}
+
+@include tablet {
+  .container {
+    text-align: center;
+  }
+  .column {
+    margin-right: 0;
+    margin-left: 0;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include desktop {
+  .container {
+    text-align: center;
+  }
+  .columns {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+
+    svg {
+      margin-bottom: 32px;
+    }
+    @include row();
+  }
+  .column {
+    @include col;
+    @include span_4_of_12;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.container {
+  border-bottom: solid 1px $colorShutter;
+}

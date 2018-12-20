@@ -1,0 +1,21 @@
+$dimens: (
+  header: (
+    maxWidth: 930px,
+    height: 60px
+  ),
+  body: (
+    maxWidth: 1200px
+  ),
+  tablet: 720px,
+  desktop: 1100px
+);
+
+@function dimens($type: default, $element: null, $prop: null) {
+  @if $element and $prop {
+    @return map-get(map-get(map-get($dimens, $type), $element), $prop);
+  } @else if $element != null {
+    @return map-get(map-get($dimens, $type), $element);
+  } @else {
+    @return map-get($dimens, $type);
+  }
+}

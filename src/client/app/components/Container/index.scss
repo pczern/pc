@@ -1,0 +1,51 @@
+@import '../../css/dimens';
+
+.boxed {
+  width: 100%;
+}
+:global(.home) {
+  .boxed__inner {
+    max-width: 650px;
+    @include desktop {
+      max-width: 1100px;
+    }
+  }
+}
+.boxed__inner {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 48px $dimenPadding;
+  height: 100%;
+  width: 100%;
+  @include desktop {
+    max-width: 1000px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.full {
+  width: 100%;
+
+  &.paddingVertical {
+    padding: 42px 0;
+  }
+}
+
+@include tablet {
+  .boxed__inner {
+    padding: 48px $dimenPadding;
+  }
+}
+
+@include desktop {
+  .boxed--maxWidth {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .boxed__inner {
+    padding: 56px $dimenPadding;
+  }
+}

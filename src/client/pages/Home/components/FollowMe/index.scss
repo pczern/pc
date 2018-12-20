@@ -1,0 +1,15 @@
+@import '../../../../app/css/colors';
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    display: block;
+    margin: 0 0.3em;
+    font-size: 2em;
+  }
+  svg {
+    color: colors(primary, default);
+  }
+}

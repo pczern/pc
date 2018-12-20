@@ -1,0 +1,36 @@
+.icons {
+  display: none;
+}
+
+@include desktop {
+  .icons {
+    display: block;
+    color: $colorPrimary;
+    background-color: transparent;
+    // background-color: #222;
+    max-width: 700px;
+    @include row();
+
+    padding-top: 64px;
+    padding-bottom: 64px;
+    font-family: Raleway, sans-serif;
+    font-size: 1.2em;
+    margin: 0 auto;
+    svg {
+      font-size: 2.4em;
+      margin-bottom: 0.3em;
+    }
+    h3 {
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+  }
+
+  .column {
+    @include col;
+    @include span_3_of_12;
+  }
+  .delay {
+    animation-delay: 6s;
+  }
+}

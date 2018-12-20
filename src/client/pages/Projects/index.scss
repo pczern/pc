@@ -1,0 +1,34 @@
+@include tablet {
+    .projects {
+        // display: flex;
+        // align-items: center;
+        // flex-flow: row wrap;
+        // justify-content: space-between;
+        @include row();
+        // & > * {
+        //   margin-right: 20px;
+        //   &:last-child {
+        //     margin-right: 0;
+        //   }
+        // }
+    }
+}
+
+.column {
+    @include tablet-only {
+        @include col;
+        @include span_6_of_12;
+        &:nth-child(2n + 1) {
+            margin-left: 0;
+        }
+    }
+
+    @include desktop {
+        @include col;
+
+        @include span_4_of_12;
+        &:nth-child(3n + 1) {
+            margin-left: 0;
+        }
+    }
+}

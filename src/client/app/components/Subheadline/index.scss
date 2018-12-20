@@ -1,0 +1,31 @@
+// .headline {
+//   font-weight: 300;
+//   color: #bebebe;
+//   line-height: 2;
+//   margin-bottom: 24px;
+//   font-family: 'Raleway', sans-serif;
+//   text-align: center;
+// }
+
+// @include tablet {
+//   .headline {
+//     margin-bottom: 24px;
+//   }
+// }
+
+// @include desktop {
+//   .headline {
+//     margin-bottom: 48px;
+//   }
+// }
+
+.center {
+  text-align: center;
+}
+
+.headline {
+  color: #bebebe;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 2.25em;
+}

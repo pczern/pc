@@ -1,0 +1,193 @@
+.container {
+    height: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 300px;
+    background: $colorPrimary;
+    background: url('../../../../app/assets/banner.png');
+    background-image: linear-gradient(
+            -283deg,
+            rgba($colorPrimary, 0.9) 16%,
+            rgba($colorPrimary, 0.67) 50%,
+            rgba($colorPrimary, 0.9) 113%
+        ),
+        url('../../../../app/assets/banner.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+.banner__play {
+    animation-delay: 0s;
+    animation-duration: 1s;
+    display: flex;
+    font-size: 4em;
+    fill: rgb(255, 255, 255);
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-top: -20px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headline {
+    font-size: 1.9em;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.3;
+    margin-bottom: 1.5em;
+    span {
+        display: block;
+        &::first-letter {
+            color: $colorPrimary;
+            font-size: 1.05em;
+        }
+    }
+}
+
+// .contentOuter {
+//   position: relative;
+//   height: 100%;
+// }
+// .contentInner {
+//   position: absolute;
+//   bottom: 56px;
+//   margin-left: -5px;
+//   display: none;
+// }
+
+.primaryButton {
+    font-size: 0.98em;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    display: block;
+    border-radius: 4px;
+    line-height: 2.8;
+    font-weight: 400;
+    background-color: $colorPrimary;
+    border: solid 1px transparent !important;
+    color: $colorLight;
+    padding: 0 2em;
+}
+
+.secondaryButton {
+    transition: all 500ms ease-in;
+    margin-top: 1em;
+    display: block;
+    line-height: 2.8;
+    font-size: 1.05em;
+    background-color: transparent;
+    border-radius: 0;
+    border: solid 2px $colorLight !important;
+    font-weight: 400;
+    color: $colorPrimary;
+}
+
+.banner__socialIcons {
+    display: none;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@include tablet {
+    .banner {
+        height: 400px;
+    }
+    .content {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .headline {
+        span {
+            display: inline-block;
+            margin-right: 0.5em;
+        }
+    }
+}
+@include desktop {
+    .contentOuter {
+        max-width: 900px !important;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        -webkit-align-content: space-between;
+        align-content: space-between;
+    }
+    .content {
+        text-align: center;
+        padding-top: 0;
+        display: block;
+    }
+
+    .banner {
+        height: 520px;
+    }
+    .headline {
+        color: $colorPrimary;
+        font-size: 1.5em;
+        text-transform: capitalize;
+        font-weight: 500;
+        margin-bottom: 0 !important;
+        display: none;
+        span {
+            display: inline-block;
+            margin-right: 0.5em;
+        }
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .primaryButton,
+    .secondaryButton {
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0.5px;
+        margin: 0 1em;
+    }
+    .secondaryButton {
+        margin: 1em 0;
+        border-radius: 0;
+        border: solid 2px $colorLight !important;
+        font-weight: 400;
+        color: $colorPrimary;
+    }
+    .primaryButton {
+        margin-left: 2em;
+        font-weight: 400;
+        background: $colorPrimary;
+        border: solid 1px transparent !important;
+        color: $colorLight;
+        padding: 0 2em;
+    }
+
+    .banner__play {
+        margin: 0 auto;
+        display: flex;
+    }
+    .banner__socialIcons {
+        display: flex;
+        position: absolute;
+        right: 24px;
+        bottom: 16px;
+        color: rgba(255, 255, 255, 0.5);
+        a {
+            margin: 0 0.5em;
+        }
+    }
+}
+
+.secondaryButton:hover {
+    color: $colorPrimary !important;
+    background-color: $colorLight !important;
+}
